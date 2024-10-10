@@ -17,63 +17,82 @@ header {
 	left: 0;
 	padding: 10px 20px;
 	z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
-  }
-  
-  .bar-navegation {
+}
+
+.bar-navegation {
 	width: 100%;
 	display: flex; /* Cambiar a flexbox */
 	justify-content: space-between; /* Para espacio entre el título y el menú */
-  }
-  
-  .bar-navegation ul {
+}
+
+.bar-navegation ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 	display: flex; /* Para que los <li> estén alineados horizontalmente */
-	gap: 20px; /* Espacio entre los elementos del menú */
+	gap: 1em; /* Espacio entre los elementos del menú */
   }
   
-  .bar-navegation h2 {
+.bar-navegation h2 {
 	margin: 0; /* Elimina márgenes del título */
-  }
+}
   
-  .bar-navegation ul li a {
+.bar-navegation ul li a {
 	font-weight: 700;
 	color: white; /* Cambia a blanco para mejor contraste */
 	text-decoration: none;
-	font-size: 20px;
+	font-size: 1.4em;
   }
 
 
 
 /* General Styles */
 body {
-	margin-top: 5%; /* Ajusta según el header */
+	margin-top: 5%;
 	background-color: #f5f5f5;
 	color: black;
-	font-family: Arial, sans-serif; /* Mejora la tipografía */
 }
 
 /* Menu Container */
 .menu-container {
-	text-align: center;
+	margin-top: 7%;
+	display: flex;
+	flex-direction: column; /* Coloca los elementos uno debajo del otro */
+	justify-content: center;
+	align-items: center;
+}
+
+
+.menu-section {
+	display: flex;
+	justify-content: space-around;
 	width: 100%;
 	padding: 2% 0; /* Mejora el espaciado vertical */
 }
 
+.menu-container h2{
+	font-size: 3em;
+
+}
+
+
 .product {
 	background-color: #ffb914;
-	margin: 2% auto; /* Centrado automático en pantallas grandes */
-	padding: 1%;
-	width: 90%;
+	text-align: center;
+	margin: 0; /* Centrado automático en pantallas grandes */
+	padding: 2%;
+	width: 25em;
+	height: 30em; /* Ajusta la altura de los contenedores */
 	max-width: 600px; /* Limita el ancho en pantallas grandes */
 	border-radius: 8px;
 	border: 3px solid black;
 }
 
+
+
 .product img {
 	width: 100%; /* Asegura que las imágenes se adapten al contenedor */
-	height: auto;
+	height: 50%; /* Ajusta la altura de las imágenes */
 	object-fit: cover;
 	border-radius: 15px;
 	border: 3px solid #f5f5f5;

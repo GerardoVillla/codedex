@@ -3,7 +3,7 @@
 	<head>
 		<title>Taquería los Méndez</title>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+		<meta id="viewport" content="width=device-width, initial-scale=1.0">  
 		<link href="style.css" rel="stylesheet" type="text/css">
 	</head>
 	<header>
@@ -18,27 +18,30 @@
 	<body>
 		<div class="menu-container" id="menu-section">
 			<h2>Nuestro menú</h2>
-			<article class="product">
-				<img src="/CodedexFinalProject/rsc/torta.jpg" alt="">
-				<h3>Torta de pastor</h3>
-				<p>Nuestra deliciosa torta de pastor es una explosión de sabores auténticos. Preparada con carne al pastor marinada en una mezcla de especias tradicionales, la servimos en un bolillo crujiente, acompañada de frescos trozos de piña, cebolla y cilantro. ¡Perfecta para los amantes del sabor mexicano!</p>
-			</article>
-			<article class="product">
-				<img src="/CodedexFinalProject/rsc/supernacho.jpg" alt="">
-				<h3>Supernacho</h3>
-				<p>El clásico taco de pastor nunca decepciona. Carne jugosa y tierna, aderezada con nuestra receta secreta, asada a la perfección en el trompo y servida en tortillas de maíz suaves, coronada con piña, cilantro, cebolla, y un toque de salsa. ¡Una verdadera delicia callejera!</p>
-			</article>
-			<article class="product">
-				<img src="/CodedexFinalProject/rsc/taco.jpg" alt="">
-				<h3>Taco de pastor</h3>
-				<p>Si buscas algo único, nuestros supernachos de pastor te sorprenderán. Crujientes totopos cubiertos con una generosa porción de carne al pastor, bañados en queso derretido y acompañados de guacamole, crema, jalapeños y frijoles. Un festín para compartir (¡o no!) lleno de sabor.</p>
-			</article>
+			<div class="menu-section">
+				<article class="product">
+					<img src="/rsc/torta.jpg" alt="">
+					<h3>Torta de pastor</h3>
+					<p>Nuestra deliciosa torta de pastor es una explosión de sabores auténticos. Preparada con carne al pastor marinada en una mezcla de especias tradicionales, la servimos en un bolillo crujiente, acompañada de frescos trozos de piña, cebolla y cilantro. ¡Perfecta para los amantes del sabor mexicano!</p>
+				</article>
+				<article class="product">
+					<img src="/rsc/supernacho.jpg" alt="">
+					<h3>Supernacho</h3>
+					<p>El clásico taco de pastor nunca decepciona. Carne jugosa y tierna, aderezada con nuestra receta secreta, asada a la perfección en el trompo y servida en tortillas de maíz suaves, coronada con piña, cilantro, cebolla, y un toque de salsa. ¡Una verdadera delicia callejera!</p>
+				</article>
+				<article class="product">
+					<img src="/rsc/taco.jpg" alt="">
+					<h3>Taco de pastor</h3>
+					<p>Si buscas algo único, nuestros supernachos de pastor te sorprenderán. Crujientes totopos cubiertos con una generosa porción de carne al pastor, bañados en queso derretido y acompañados de guacamole, crema, jalapeños y frijoles. Un festín para compartir (¡o no!) lleno de sabor.</p>
+				</article>
+			</div>
+			
 		</div>
 		<div class="order-container" id="order-section">
 			<h2>Ordena aquí</h2>
 			<form action="post">
 				<label for="tortapastor">Torta de pastor</label>
-				<input type="number" name="tortapastor" value="0" min="0" max="25">
+				<input type="number" id="tortapastor" value="0" min="0" max="10">
 				<div class="details">
 					<input type="checkbox" id="sincrema">
 					<label for="sincrema">Sin cebolla</label>
@@ -48,27 +51,27 @@
 					<label for="utensilios">Utensilios</label>
 				</div>
 				<label for="supernacho">Supernacho</label>
-				<input type="number" name="supernacho" value="0" min="0" max="15">
+				<input type="number" id="supernacho" value="0" min="0" max="15">
 				<div class="details">
-					<input type="checkbox" id="sincrema">
+					<input type="checkbox" id="nachosincrema">
 					<label for="sincrema">Sin cebolla</label>
-					<input type="checkbox" id="sincebolla">
+					<input type="checkbox" id="nachossincebolla">
 					<label for="sincebolla">Sin salsas</label>
-					<input type="checkbox" id="utensilios">
+					<input type="checkbox" id="nachosutensilios">
 					<label for="utensilios">Utensilios</label>
 
 				</div>
 				<label for="tacopastor">Taco de pastor</label>
-				<input type="number" name="tacopastor" value="0" min="0" max="40">
+				<input type="number" id="tacopastor" value="0" min="0" max="40">
 				<div class="details">
-					<input type="checkbox" id="sincrema">
+					<input type="checkbox" id="tacosincrema">
 					<label for="sincrema">Sin cebolla</label>
-					<input type="checkbox" id="sincebolla">
+					<input type="checkbox" id="tacosincebolla">
 					<label for="sincebolla">Sin salsas</label>
-					<input type="checkbox" id="utensilios">
+					<input type="checkbox" id="tacoutensilios">
 					<label for="utensilios">Utensilios</label>
 				</div>
-				<input type="submit" name="Order">
+				<input type="submit" id="Order">
 			</form>
 		</div>
 	</body>
